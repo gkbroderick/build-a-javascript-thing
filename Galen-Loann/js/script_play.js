@@ -32,7 +32,7 @@ function calcTotal() {
 function checkSize(quant, size) {
   if ((quant > 0) && (size != "")) {
     alert.classList.remove("color1");
-    alert.textContent = "THANKS";
+    alert.textContent = "";
   }
   else if ((quant > 0) && (size == "")){
     alert.classList.add("color1");
