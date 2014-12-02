@@ -108,3 +108,62 @@ width:40px;
 .alert-message {
   padding-bottom: 1em;
 }
+
+/* text field */
+
+#giftMessage {
+margin-right:10px;
+margin-bottom: 10px;
+}
+
+#message {
+min-height:215px;
+margin-right:10px;
+margin-bottom: 10px;
+}
+
+.red {
+width: 400px;
+min-height:200px;
+text-align: center;
+padding:2em;
+background-color: crimson;
+font-family: 'Grand Hotel', cursive;
+font-size: 3em;
+color:white;
+}
+
+.orange {
+width: 400px;
+min-height:200px;
+text-align: center;
+padding:2em;
+background-color: orange;
+font-family: 'Grand Hotel', cursive;
+font-size: 3em;
+color:white;
+}
+.green {
+width: 400px;
+min-height:200px;
+text-align: center;
+padding:2em;
+background-color: green ;
+font-family: 'Grand Hotel', cursive;
+font-size: 3em;
+color:white;
+}
+
+/* color picker */
+
+#squareOne {
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  margin-bottom: 10px;
+}
+#squareTwo {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+}

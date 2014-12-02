@@ -136,6 +136,16 @@
         </fieldset>
 </form>
 
+<form id="giftCard">
+  <input type="radio" id="giftMessage" value="checked">Send a Gift Message</input>
+  <br class="breaker" />
+  <textarea type="text" id="message" maxlength="60"></textarea>
+  <textarea type="text" id="messagePreview" class="red" maxlength="40"></textarea>
+  <p>Change background:</p>
+  <div id="squareOne"></div>
+  <div id="squareTwo"></div>
+</form>
+
 <br class="breaker" />
 
 <form class="cart span_3_of_3" id="cartSweater">
@@ -211,17 +221,6 @@
     </div>
   </div>
 <!-- sweater three ends -->
-
-  <div class="alert-message">
-    <h3 id="alert"></h3>
-  </div>
-
-<!-- calculate total -->
-<div class="group calc">
-  <p><label for="btnEstimate"></label>
-  <input type="submit" value="Total $USD" id="btnEstimate">
-  <input type="text" id="textTotal" placeholder="$0.00" readonly></p>
-<div id="results"></div>
 </form>
 </main>
 
@@ -236,6 +235,7 @@
     <script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
     <script src="js/localStorage.js"></script>
     <script src="js/script_play.js"> </script>
+    <script src="js/color.js"> </script>
 
   </body>
 </html>
