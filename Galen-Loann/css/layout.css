@@ -1,0 +1,126 @@
+/*  page style  */
+
+* {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box
+}
+
+html,
+body {
+  font-family: 'Questrial', sans-serif;
+}
+
+body {
+  margin : 0 auto;
+  padding : 0;
+  font : 100%/1.4;
+}
+
+/*  .main-nav h2 {
+    display: block;
+    background-color: none;
+    text-align: center;
+  }*/
+
+  .main-nav a {
+    color:black;
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+
+  .main-header h1,
+  .main-footer {
+    text-align: center;
+  }
+}
+/* column styles */
+
+.span_3_of_3,
+.span_5_of_8,
+.span_3_of_8,
+.span_1_of_3 {
+  display: inline;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+
+/*  footer style  */
+
+.main-footer {
+  height: 4em;
+  width: 100%;
+  color:black;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-footer strong {
+  color:black;
+  font-size: 8%;
+}
+
+/*  SECTIONS  */
+
+.section {
+  clear: both;
+  padding: .5%;
+  margin: .5%;
+}
+
+
+/*  COLUMN SETUP  */
+.col {
+  display: inline-block;
+  float:left;
+  margin: 1% 0 1% 2%;
+}
+
+.col:first-child {
+  margin-left: 0;
+}
+
+.breaker {
+  clear: both;
+}
+
+/*  GRIDS OF THREE AND EIGHT */
+.span_3_of_3 {
+  width: 100%;
+}
+.span_2_of_3 {
+  width: 66%;
+}
+.span_1_of_3 {
+  width: 32%;
+}
+
+.span_5_of_8 {
+  width: 61.75%;
+}
+.span_3_of_8 {
+  width: 36.25%;
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+  .span_3_of_3 {
+    width: 100%;
+  }
+  .span_2_of_3 {
+    width: 100%;
+  }
+  .span_1_of_3 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%;
+  }
