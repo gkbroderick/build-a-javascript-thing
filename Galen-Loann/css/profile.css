@@ -88,7 +88,7 @@ button {
 }
 
 .color1 {
-  color: #d856bb;
+  color: crimson;
 }
 
 .center {
@@ -97,10 +97,14 @@ button {
 
 /* sweater containers */
 .item {
-  padding-bottom: 5em;
+  padding-bottom: 4em;
 }
 
 /* sizes menu */
 .qty {
 width:40px;
+}
+
+.alert-message {
+  padding-bottom: 1em;
 }
