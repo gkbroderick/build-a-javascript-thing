@@ -137,9 +137,9 @@
 </form>
 
 <form id="giftCard">
-  <input type="radio" id="giftMessage" value="checked">Send a Gift Message</input>
+  <input type="checkbox" id="giftMessage">Send a Gift Message</input>
   <br class="breaker" />
-  <textarea type="text" id="message" maxlength="60"></textarea>
+  <textarea type="text" id="message" maxlength="40"></textarea>
   <textarea type="text" id="messagePreview" class="red" maxlength="40"></textarea>
   <p>Change background:</p>
   <div id="squareOne"></div>
@@ -222,7 +222,19 @@
   </div>
 <!-- sweater three ends -->
 </form>
+  <div class="alert-message">
+    <h3 id="alert"></h3>
+  </div>
+
+<!-- calculate total -->
+<div class="group calc">
+  <p><label for="btnEstimate"></label>
+  <input type="submit" value="Total $USD" id="btnEstimate">
+  <input type="text" id="textTotal" placeholder="$0.00"></p>
+<div id="results"></div>
+</form>
 </main>
+
 
     <!--footer-->
 
