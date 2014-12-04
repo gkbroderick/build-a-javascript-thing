@@ -54,14 +54,23 @@ body {
   margin: .5%;
 }
 
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  }
+
 /*  COLUMN SETUP  */
 .col {
 display: inline;
 float: left;
-margin: 1% 0 1% 2%;
+/*margin: 1% 0 1% 2%;*/
 }
 .col:first-child {
-  margin-left: 0;
+  margin-left: 1%;
 }
 
 /*  GRIDS OF THREE AND EIGHT */
@@ -69,7 +78,7 @@ margin: 1% 0 1% 2%;
   width: 100%;
 }
 .span_1_of_3 {
-  width: 32%;
+  width: 31%;
 }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */

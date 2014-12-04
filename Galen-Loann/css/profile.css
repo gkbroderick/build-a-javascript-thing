@@ -120,7 +120,6 @@ margin-bottom: 10px;
 height:50px;
 width: 250px;
 }
-
 #messagePreview {
 position: relative;
 resize: none;
@@ -133,7 +132,6 @@ font-size: 1.5em;
 color:white;
 text-transform: uppercase;
 }
-
 /* text area data attributes for toggle */
 textarea[data-color="main"] {
   background-color: #cd0000;
@@ -147,9 +145,7 @@ textarea[data-color="green"] {
 textarea[data-color="blue"] {
   background-color: #20b2aa;
 }
-
 /* color menu */
-
 .imgList,
 .colorBtn {
   width: 50px;
@@ -169,7 +165,6 @@ li[data-color="blue"] {
 }
 
 /* image menu */
-
 img[data-image="santa"] {
   width:60px;
 }
