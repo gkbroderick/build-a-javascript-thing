@@ -1,8 +1,19 @@
+
 // variable for message container ID
 // variable colors 3 buttons
 // access colors by data attribute: data-color
 // click on square and get attribute color, check if color = color
 // if true then set attribute color in message container to this.attribute
+
+var message = document.getElementById("message"),
+messagePreview = document.getElementById("messagePreview");
+
+
+message.addEventListener("keypress", function(){
+  messagePreview.value = message.value;
+}, false);
+
+// onclick color for text field
 
 var preview = document.getElementById('messagePreview');
 var colorMenu = document.getElementById('colorMenu');
