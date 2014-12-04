@@ -154,93 +154,73 @@
     <li class="imgList"><img src="img/santa.png" data-image="santa"/></li>
   </ul>
 </form>
-
+<!-- section -->
 <form class="cart section span_3_of_3" id="cartSweater">
-<!-- sweater one -->
-  <div class="item col">
-    <h3>Sweater</h3>
-    <img src="img/fpo.jpg"/>
-    <div class="info">
-      <p>Hand-Made by Elves</p>
-      <span>Price: $29.99</span>
-    </div>
-<!-- qty field -->
-  <div class="order field">
-    <label for="SwtOne">Select Qty</label>
-    <input type="number" id="SwtOne" min="0" max="25" step="1" placeholder="0" class="qty">
-<!-- select drop down -->
-   <select id="sizeSwtOne" name="sizes">
-    <option value="">- select -</option>
-    <option value="small">Small</option>
-    <option value="medium">Medium</option>
-    <option value="large">Large</option>
-    <option value="x-large">X-Large</option>
-   </select>
-    </div>
-  </div>
-<!-- sweater one ends -->
-
-<!-- sweater two -->
-  <div class="item col">
-    <h3>Sweater</h3>
-    <img src="img/fpo.jpg"/>
-    <div class="info">
-      <p>Hand-Made by Elves</p>
-      <span>Price: $35.99</span>
-    </div>
-<!-- qty field -->
-  <div class="order field">
-    <label for="SwtTwo">Select Qty</label>
-    <input type="number" id="SwtTwo" min="0" max="25" step="1" placeholder="0" class="qty">
-<!-- select drop down -->
-   <select id="sizeSwtTwo" name="sizes">
-    <option value="">- select -</option>
-    <option value="small">Small</option>
-    <option value="medium">Medium</option>
-    <option value="large">Large</option>
-    <option value="x-large">X-Large</option>
-   </select>
-    </div>
-  </div>
-<!-- sweater two ends -->
-
-<!-- sweater three -->
-  <div class="item col">
-    <h3>Sweater</h3>
-    <img src="img/fpo.jpg"/>
-    <div class="info">
-      <p>Hand-Made by Elves</p>
-      <span>Price: $19.99</span>
-    </div>
-<!-- qty field -->
-  <div class="order field">
-    <label for="SwtThree">Select Qty</label>
-    <input type="number" id="SwtThree" min="0" max="25" step="1" placeholder="0" class="qty">
-<!-- select drop down -->
-   <select id="sizeSwtThree" name="sizes">
-    <option value="">- select -</option>
-    <option value="small">Small</option>
-    <option value="medium">Medium</option>
-    <option value="large">Large</option>
-    <option value="x-large">X-Large</option>
-   </select>
-    </div>
-  </div>
-<!-- sweater three ends -->
-</form>
-
-    <!--footer-->
-
-    <section class="col span_3_of_3">
-      <footer class="main-footer section group">
-        <footnote><strong>Refactored JS: Loann and Galen</strong><footnote>
-      </footer>
-    </section>
+    <!-- sweater one -->
+        <section class="item col">
+          <h1>Sweater</h1>
+          <img src="img/fpo.jpg"/>
+          <p>Hand-Made by Elves</p>
+          <p>Price: $29.99</p>
+          <label for="SwtOne">Select Qty</label>
+          <input type="number" id="SwtOne" min="0" max="25" step="1" placeholder="0" class="qty">
+          <select id="sizeSwtOne" name="sizes">
+            <option value="">- select -</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="x-large">X-Large</option>
+          </select>
+        </section>
+      <!-- sweater two -->
+        <section class="item col">
+          <h1>Sweater</h1>
+          <img src="img/fpo.jpg"/>
+          <p>Hand-Made by Elves</p>
+          <p>Price: $35.99</p>
+          <label for="SwtTwo">Select Qty</label>
+          <input type="number" id="SwtTwo" min="0" max="25" step="1" placeholder="0" class="qty">
+          <select id="sizeSwtTwo" name="sizes">
+            <option value="">- select -</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="x-large">X-Large</option>
+          </select>
+        </section>
+        <!-- sweater three -->
+        <section class="item col">
+          <h1>Sweater</h1>
+          <img src="img/fpo.jpg"/>
+          <p>Hand-Made by Elves</p>
+          <p>Price: $19.99</p>
+          <label for="SwtThree">Select Qty</label>
+          <input type="number" id="SwtThree" min="0" max="25" step="1" placeholder="0" class="qty">
+          <select id="sizeSwtThree" name="sizes">
+            <option value="">- select -</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="x-large">X-Large</option>
+          </select>
+        </section>
+      </form>
+      <!-- alert message -->
+      <h3 id="alert" class="alert-message section span_3_of_3"></h3>
+      <!-- calculate total -->
+      <section class="group calc section span_3_of_3">
+        <label for="btnEstimate"></label>
+        <input type="submit" value="Total $USD" id="btnEstimate">
+        <input type="text" id="textTotal" placeholder="$0.00">
+      </section>
+    </main>
+    <footer class="main-footer section group col span_3_of_3 ">
+      <footnote><strong>Refactored JS: Loann and Galen</strong><footnote>
+    </footer>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
     <script src="js/localStorage.js"></script>
     <script src="js/script_play.js"> </script>
     <script src="js/color.js"> </script>
-
   </body>
 </html>
