@@ -163,16 +163,3 @@ li[data-color="green"] {
 li[data-color="blue"] {
   background-color: #20b2aa;
 }
-
-/* image menu */
-img[data-image="santa"] {
-  width:60px;
-}
-
-/*img[data-image="santa"] {
-  position: relative;
-  left: 570px;
-  top: -120px;
-  z-index: 2;
-  height: 200px;
-}*/
