@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Galen and Loann JS</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nunito:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/profile.css">
+
+
+  </head>
+
+  <body>
+
+    <!--header-->
+
+    <header role="banner" class="main-header col span_3_of_3">
+      <nav class="main-nav">
+        <h1>Best Gift Ever</h1>
+    </header>
+
+    <!--main-->
+
+    <main class="profile section group">
+
+      <!--form-->
+
+      <form id="createProfile" class="stacked col span_3_of_3">
+        <fieldset>
+          <legend>Gift Recipient</legend>
+          <small class="block"><span class="color1">&#42;</span> Required Fields</small>
+
+          <ul class="field inline-block">
+            <li>
+              <input type="text" pattern=".+" required placeholder="First Name &#42;" class="persisted-text" name="first-name" id="first-name" autofocus>
+              <label for="first-name">First Name <span class="color1">&#42;</span></label>
+            </li>
+          </ul>
+
+          <ul class="field inline-block">
+            <li>
+              <input type="text" pattern=".+" required placeholder="Last Name &#42;" class="persisted-text" name="last-name" id="last-name" autofocus>
+              <label for="last-name">Last Name <span class="color1">&#42;</span></label>
+            </li>
+          </ul>
+
+          <ul class="field">
+            <li>
+              <input type="text" pattern=".+" required placeholder="Address &#42;" class="persisted-text" name="address" id="address" autofocus>
+              <label for="address">Address <span class="color1">&#42;</span></label>
+            </li>
+          </ul>
+
+          <ul class="field inline-block">
+            <li>
+              <input type="text" pattern=".+" required placeholder="City &#42;" class="persisted-text" name="city" id="city" autofocus>
+              <label for="city">City <span class="color1">&#42;</span></label>
+            </li>
+          </ul>
+          <ul class="field inline-block">
+            <li>
+              <input type="text" pattern=".+" required placeholder="Zip Code &#42;" class="persisted-text" name="zip-code" id="zip-code" autofocus>
+              <label for="zip-code">Zip Code <span class="color1">&#42;</span></label>
+            </li>
+          </ul>
+          <ul class="field inline-block">
+            <li>
+              <select required>
+                <option selected disabled value="">State</option>
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+                <option value="DC">DC</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="IA">IA</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="ME">ME</option>
+                <option value="MD">MD</option>
+                <option value="MA">MA</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MS">MS</option>
+                <option value="MO">MO</option>
+                <option value="MT">MT</option>
+                <option value="NE">NE</option>
+                <option value="NV">NV</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NY">NY</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PE</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WV">WV</option>
+                <option value="WI">WI</option>
+                <option value="WY">WY</option>
+              </select>
+              <small><span class="color1"> &#42;</span></small>
+            </li>
+          </ul>
+
+          <ul class="field">
+            <li>
+              <!-- pattern="^(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}$" -->
+              <input type="tel" pattern=".+" required placeholder="Phone Number &#42;" class="persisted-text" name="phone-number" id="phone-number" autofocus>
+              <label for="phone-number">Phone: (XXX)-XXX-XXXX <span class="color1">&#42;</span></label>
+            </li>
+          </ul>
+        </fieldset>
+</form>
+
+<form id="giftCard">
+  <input type="checkbox" id="giftMessage" value="checked">Send a Gift Message</input>
+  <br class="breaker" />
+  <textarea type="text" id="message" maxlength="60" placeholder="Type Message Here"></textarea>
+  <textarea type="text" id="messagePreview" class="messageArea" data-color="main" maxlength="20"></textarea>
+
+  <!-- color menu -->
+  <ul id="colorMenu" class="colorToggle">
+  <p>Select Background:</p>
+  <li data-color="red" data-state="toggle" name="red" class="colorBtn"></li>
+  <li data-color="green" data-state="toggle" name="green" class="colorBtn"></li>
+  <li data-color="blue" data-state="toggle" name="blue" class="colorBtn"></li>
+  </ul>
+</form>
+
+<br class="breaker" />
+
+<form class="cart span_3_of_3" id="cartSweater">
+
+<!-- sweater one -->
+  <div class="item col span_1_of_3">
+    <h3>Sweater</h3>
+    <img src="img/fpo.jpg"/>
+    <div class="info">
+      <p>Hand-Made by Elves</p>
+      <span>Price: $29.99</span>
+    </div>
+<!-- qty field -->
+  <div class="order field">
+    <label for="SwtOne">Select Qty</label>
+    <input type="number" id="SwtOne" min="0" max="25" step="1" placeholder="0" class="qty">
+<!-- select drop down -->
+   <select id="sizeSwtOne" name="sizes">
+    <option value="">- select -</option>
+    <option value="small">Small</option>
+    <option value="medium">Medium</option>
+    <option value="large">Large</option>
+    <option value="x-large">X-Large</option>
+   </select>
+    </div>
+  </div>
+<!-- sweater one ends -->
+
+<!-- sweater two -->
+  <div class="item col span_1_of_3">
+    <h3>Sweater</h3>
+    <img src="img/fpo.jpg"/>
+    <div class="info">
+      <p>Hand-Made by Elves</p>
+      <span>Price: $35.99</span>
+    </div>
+<!-- qty field -->
+  <div class="order field">
+    <label for="SwtTwo">Select Qty</label>
+    <input type="number" id="SwtTwo" min="0" max="25" step="1" placeholder="0" class="qty">
+<!-- select drop down -->
+   <select id="sizeSwtTwo" name="sizes">
+    <option value="">- select -</option>
+    <option value="small">Small</option>
+    <option value="medium">Medium</option>
+    <option value="large">Large</option>
+    <option value="x-large">X-Large</option>
+   </select>
+    </div>
+  </div>
+<!-- sweater two ends -->
+
+<!-- sweater three -->
+  <div class="item col span_1_of_3">
+    <h3>Sweater</h3>
+    <img src="img/fpo.jpg"/>
+    <div class="info">
+      <p>Hand-Made by Elves</p>
+      <span>Price: $19.99</span>
+    </div>
+<!-- qty field -->
+  <div class="order field">
+    <label for="SwtThree">Select Qty</label>
+    <input type="number" id="SwtThree" min="0" max="25" step="1" placeholder="0" class="qty">
+<!-- select drop down -->
+   <select id="sizeSwtThree" name="sizes">
+    <option value="">- select -</option>
+    <option value="small">Small</option>
+    <option value="medium">Medium</option>
+    <option value="large">Large</option>
+    <option value="x-large">X-Large</option>
+   </select>
+    </div>
+  </div>
+<!-- sweater three ends -->
+</form>
+</main>
+
+    <!--footer-->
+
+    <section class="col span_3_of_3">
+      <footer class="main-footer section group">
+        <footnote><strong>Refactored JS: Loann and Galen</strong><footnote>
+      </footer>
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+    <script src="js/localStorage.js"></script>
+    <script src="js/script_play.js"> </script>
+    <script src="js/color.js"> </script>
+
+  </body>
+</html>
