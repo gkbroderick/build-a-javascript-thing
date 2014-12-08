@@ -126,13 +126,17 @@
       <input type="checkbox" id="giftMessage" value="checked" class="section">Send a Gift Message</input>
       <br class="breaker" />
       <textarea type="text" id="message" maxlength="40" placeholder="Type Message Here"></textarea>
-      <textarea type="text" id="messagePreview" data-color="main" maxlength="40"></textarea>
+      <div type="text" id="messagePreview" data-color="main" maxlength="40"></div>
       <!-- color menu -->
       <ul id="colorMenu">
         <p>Select Background:</p>
         <li data-color="red" data-state="toggle" name="red" class="colorBtn"></li>
         <li data-color="green" data-state="toggle" name="green" class="colorBtn"></li>
         <li data-color="blue" data-state="toggle" name="blue" class="colorBtn"></li>
+        <li>
+          <img src="img/retro_santa_thumb.png" data-image="thumb-santa"/></li>
+        </a>
+        </a>
       </ul>
     </form>
 <!-- section -->
@@ -144,7 +148,6 @@
         <img src="img/fpo.jpg"/>
         <p>Hand-Made by Elves</p>
         <p>Price: $29.99</p>
-        <label for="SwtOne">Select Qty</label>
         <input type="number" id="SwtOne" min="0" max="25" step="1" placeholder="0" class="qty">
         <select id="sizeSwtOne" name="sizes">
           <option value="">- select -</option>
@@ -160,7 +163,6 @@
         <img src="img/fpo.jpg"/>
         <p>Hand-Made by Elves</p>
         <p>Price: $35.99</p>
-        <label for="SwtTwo">Select Qty</label>
         <input type="number" id="SwtTwo" min="0" max="25" step="1" placeholder="0" class="qty">
         <select id="sizeSwtTwo" name="sizes">
           <option value="">- select -</option>
@@ -176,7 +178,6 @@
         <img src="img/fpo.jpg"/>
         <p>Hand-Made by Elves</p>
         <p>Price: $19.99</p>
-        <label for="SwtThree">Select Qty</label>
         <input type="number" id="SwtThree" min="0" max="25" step="1" placeholder="0" class="qty">
         <select id="sizeSwtThree" name="sizes">
           <option value="">- select -</option>
@@ -202,6 +203,6 @@
     <script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
     <script src="js/localStorage.js"></script>
     <script src="js/script_play.js"> </script>
-    <script src="js/color.js"> </script>
+    <script src="js/color_jquery.js"> </script>
   </body>
 </html>
