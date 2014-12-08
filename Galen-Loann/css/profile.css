@@ -133,21 +133,22 @@ color:white;
 text-transform: uppercase;
 }
 /* text area data attributes for toggle */
-textarea[data-color="main"] {
+div[data-color="main"] {
   background-color: #cd0000;
 }
-textarea[data-color="red"] {
+div[data-color="red"] {
   background-color: #cd0000;;
 }
-textarea[data-color="green"] {
+div[data-color="green"] {
   background-color: #61B329;
 }
-textarea[data-color="blue"] {
+div[data-color="blue"] {
   background-color: #20b2aa;
 }
 /* color menu */
 .imgList,
-.colorBtn {
+.colorBtn,
+img[data-image="thumb-santa"] {
   width: 50px;
   height: 50px;
   margin-bottom: 10px;
@@ -163,3 +164,10 @@ li[data-color="green"] {
 li[data-color="blue"] {
   background-color: #20b2aa;
 }
+
+.large-santa {
+  background-image: url('../img/retro_santa_thumb.png');
+  background-repeat: none;
+  width:100%;
+}
+
